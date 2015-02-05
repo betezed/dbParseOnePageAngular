@@ -1,0 +1,10 @@
+<form class='form-inline'>
+    <div class='form-group'>
+        <p class="form-control-static">Values : </p>
+    </div>
+    <div class='form-group'>
+        <select ng-model='columnsCtrl.selected_column' ng-change='columnsCtrl.update()'>
+            <option ng-repeat="column in columnsCtrl.columns" value='{{column}}'>{{column}}</option>
+        </select>
+    </div>
+</form>
